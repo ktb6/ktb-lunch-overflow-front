@@ -1,2 +1,2 @@
-# ktb-lunch-overflow-front
-front repo for ktb lunch overflow
+# lunch-overflow-web
+카테부 수강생들의 위한 점심 메뉴 추천 서비스
