@@ -1,36 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Kakaotech Bootcamp Lunch Overflow
 
-## Getting Started
+카카오테크 부트캠프 오프라인 수강생들의 위한 점심 메뉴 추천 서비스
 
-First, run the development server:
+### 핵심 기능
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 선호/비선호 선택을 통해 사용자의 오늘 기분과 날씨에 알맞는 점심 메뉴를 추천
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 기술스택
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- typescript: javascript에 타입을 추가한 언어
+- react: 가장 인기 있는 UI 라이브러리
+- next.js: react 기반 웹 개발을 위한 프레임워크
+- sass: 변수, 중첩, 믹스인 등을 사용할 수 있는 css 확장 버전
+- zustand: 클라이언트 측 상태 관리
+- react-query: 서버 상태 관리, 비동기 데이터 페칭
