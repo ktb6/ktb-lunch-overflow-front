@@ -1,0 +1,10 @@
+.container {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  padding-bottom: 56px;
+  overflow: auto;
+  height: calc(100vh - 111px);
+  width: 100%;
+  box-sizing: border-box;
+}

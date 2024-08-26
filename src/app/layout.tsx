@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "@/styles/globals.css";
-import Container from "@/components/Container";
+import ScreenContainer from "@/components/ScreenContainer";
+import SplashScreen from "@/components/SplashScreen";
+import Header from "@/components/Header";
+import BottomNavigation from "@/components/BottomNavigation/BottomNavigation";
+import MainContainer from "@/components/MainContainer/MainContainer";
 
-const inter = Inter({ subsets: ["latin"] });
+const openSans = Open_Sans({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+});
 
 export const metadata: Metadata = {
   title: "Lunch Overflow",
@@ -17,8 +25,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Container>{children}</Container>
+      <body className={openSans.className}>
+        <ScreenContainer>
+          <Header />
+          <SplashScreen>
+            <MainContainer>{children}</MainContainer>
+          </SplashScreen>
+          <BottomNavigation />
+        </ScreenContainer>
       </body>
     </html>
   );

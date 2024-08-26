@@ -1,0 +1,26 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  background-color: white;
+  padding: 0 16px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ececec;
+}
+
+.navItem {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+}

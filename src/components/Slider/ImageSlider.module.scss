@@ -1,0 +1,88 @@
+.sliderContainer {
+  --d: 36s; /* duration */
+
+  display: grid;
+  overflow: hidden;
+}
+
+.sliderWrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: calc(100% * 12 / 3);
+  transform: translateX(600px);
+  padding: 4px 0;
+}
+
+.slide {
+  grid-area: 1/1;
+  height: 200px;
+  aspect-ratio: 1.1;
+  object-fit: cover;
+  animation: slideLeftToRight var(--d) linear infinite;
+}
+
+.reverse .slide {
+  animation: slideRightToLeft var(--d) linear infinite;
+}
+
+.slide:nth-child(2) {
+  animation-delay: calc(1 * var(--d) / -12);
+}
+
+.slide:nth-child(3) {
+  animation-delay: calc(2 * var(--d) / -12);
+}
+
+.slide:nth-child(4) {
+  animation-delay: calc(3 * var(--d) / -12);
+}
+
+.slide:nth-child(5) {
+  animation-delay: calc(4 * var(--d) / -12);
+}
+
+.slide:nth-child(6) {
+  animation-delay: calc(5 * var(--d) / -12);
+}
+
+.slide:nth-child(7) {
+  animation-delay: calc(6 * var(--d) / -12);
+}
+
+.slide:nth-child(8) {
+  animation-delay: calc(7 * var(--d) / -12);
+}
+
+.slide:nth-child(9) {
+  animation-delay: calc(8 * var(--d) / -12);
+}
+
+.slide:nth-child(10) {
+  animation-delay: calc(9 * var(--d) / -12);
+}
+
+.slide:nth-child(11) {
+  animation-delay: calc(10 * var(--d) / -12);
+}
+
+.slide:nth-child(12) {
+  animation-delay: calc(11 * var(--d) / -12);
+}
+
+@keyframes slideLeftToRight {
+  91.67% {
+    transform: translateX(-1100%);
+  }
+  91.68% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideRightToLeft {
+  9.67% {
+    transform: translateX(100%);
+  }
+  9.68% {
+    transform: translateX(-1100%);
+  }
+}
