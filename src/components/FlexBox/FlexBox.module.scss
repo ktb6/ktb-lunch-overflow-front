@@ -1,8 +1,7 @@
-body {
-  min-height: 100vh;
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  overflow: hidden;
+  flex-direction: column;
+  gap: 20px;
 }

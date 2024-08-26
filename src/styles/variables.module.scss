@@ -1,0 +1,12 @@
+$max-width: 1179px;
+$border-radius: 30px;
+
+@mixin responsive-layout {
+  @media (max-width: $max-width) {
+    .container {
+      width: 100%;
+      padding: 10px;
+      border-radius: $border-radius;
+    }
+  }
+}
