@@ -54,7 +54,7 @@ const NaverMapComponent = ({
     };
 
     const script = document.createElement("script");
-    script.src = `https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${process.env.NEXT_PUBLIC_MAP_CLIENT_ID}`;
+    script.src = `https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${process.env.WEB_NCLOUD_CLIENT_ID}`;
     script.onload = () => initMap();
     document.head.appendChild(script);
 

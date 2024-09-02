@@ -14,14 +14,26 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { label: "홈", path: "/", icon: <IoHomeOutline size={28} /> },
+  {
+    label: "홈",
+    path: "/",
+    icon: <IoHomeOutline size={24} />,
+  },
   {
     label: "추천 내역",
     path: "/history",
-    icon: <IoCalendarOutline size={28} />,
+    icon: <IoCalendarOutline size={24} />,
   },
-  { label: "팀 추천", path: "/team", icon: <IoPeopleOutline size={28} /> },
-  { label: "내 정보", path: "/user", icon: <IoPersonOutline size={28} /> },
+  {
+    label: "팀 추천",
+    path: "/team",
+    icon: <IoPeopleOutline size={24} />,
+  },
+  {
+    label: "내 정보",
+    path: "/user",
+    icon: <IoPersonOutline size={24} />,
+  },
 ];
 
 const BottomNavigation = () => {
