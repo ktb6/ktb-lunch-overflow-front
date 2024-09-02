@@ -14,3 +14,9 @@
 - sass: 변수, 중첩, 믹스인 등을 사용할 수 있는 css 확장 버전
 - zustand: 클라이언트 측 상태 관리
 - react-query: 서버 상태 관리, 비동기 데이터 페칭
+
+### Get started
+
+명령어를 순서대로 입력해주세요
+`docker build -t lunch-overflow-web .`
+`docker run -p 3000:3000 lunch-overflow-web`
